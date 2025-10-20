@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Scaleheight — Create An Account</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div id="signupStep1">
+      <h1>Create An Account</h1>
+      <p class="lead">Enter your details to get started with Scaleheight</p>
+
+      <form id="step1Form" novalidate>
+        <div class="field">
+          <label for="firstName">Enter First Name</label>
+          <input id="firstName" name="firstName" type="text" placeholder="First Name" required />
+          <div id="errFirst" class="error" style="display:none"></div>
+        </div>
+
+        <div class="field">
+          <label for="lastName">Enter Last Name</label>
+          <input id="lastName" name="lastName" type="text" placeholder="Last Name" required />
+          <div id="errLast" class="error" style="display:none"></div>
+        </div>
+
+        <div class="field">
+          <label for="phone">Enter Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="e.g. +2348012345678" inputmode="tel" required />
+          <div id="errPhone" class="error" style="display:none"></div>
+        </div>
+
+        <div class="field">
+          <label for="email">Enter Email Address</label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" required />
+          <div id="errEmail" class="error" style="display:none"></div>
+        </div>
+                
+        <button type="button" id="continueBtn" class="btn-primary">Continue</button>
+        
+        <a 
+          href="https://sites.google.com/view/scaleheight/login" 
+          id="loginLink" 
+          class="btn-secondary"
+          role="button"
+        >
+          Click here to login
+        </a>
+        
+        <p class="small">By continuing you agree to join Scaleheight. We will keep your data safe.</p>
+      </form>        
+    </div>
+
+    <div id="signupStep2" style="display: none;">
+      <h2>Create An Account</h2>
+      
+      <div class="field">
+        <label for="password">Enter Password</label>
+        <input type="password" id="password" placeholder="Enter Password" required>
+        <div id="errPassword" class="error" style="display:none"></div>
+      </div>
+      
+      <div class="field">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <div id="errConfirmPassword" class="error" style="display:none"></div>
+      </div>
+      
+      <div class="field">
+        <label for="coupon">Enter Coupon Code</label>
+        <input type="text" id="coupon" placeholder="Enter Coupon Code">
+      </div>
+
+      <p style="font-size:14px; color:#666; margin-bottom: 20px;">
+        To Get Coupon Code, Select one of the Registration Packages Below.
+      </p>
+
+      <div class="package" id="packageCard">
+        <h4>Standard Package</h4>
+        <span class="price">₦12,000</span>
+        <span class="strike">₦16,000</span>
+      </div>
+
+      <div class="support-text">
+        If You Need more Explanation or have Any Issue with Making Payment, please contact our Support Team.
+      </div>
+
+      <a href="https://wa.link/m2g76j" target="_blank" class="contact-support-link">
+        Contact Support Team
+      </a>
+
+      <button class="btn-prev" id="backBtn">Previous</button>
+      <button class="btn-primary" id="submitBtn">Submit</button>
+    </div>
+
+  </div> 
+
+  <div class="popup-overlay" id="popup-overlay">
+    <div class="popup">
+      <span class="close-btn" id="closePopupBtn">&times;</span>
+      <h3>Payment Gateway</h3>
+
+      <p><strong>Pay with Bank Transfer</strong><br>
+      Please complete payment to the account below.</p>
+
+      <div class="note">
+        Note: DO NOT PAY WITH OPAY. It is not accepted on Scaleheight. Use any other bank or POS to pay.
+      </div>
+
+      <p style="font-size:13px; color:#444;">After making payment, please contact support with your payment receipt.</p>
+
+      <div class="payment-info">
+
+        <div class="amount" style="margin-bottom:20px;">
+          <span class="amount-label">Amount to Pay:</span>
+          <strong style="font-size:32px;">₦12,000</strong>
+          <span class="copy-btn" onclick="copyText('12000')">Copy 📋</span>
+        </div>
+
+        <div class="bankinfo">
+          
+          <strong>Account Number:</strong>
+          <p>9859505879 
+            <span class="copy-btn" onclick="copyText('9859505879')">📋</span>
+          </p>
+
+          <strong>Bank Name:</strong>
+          <p>Paystack Titan 
+            <span class="copy-btn" onclick="copyText('Paystack Titan')">📋</span>
+          </p>
+
+          <strong>Account Name:</strong>
+          <p>Tirimisiyu Usman 
+            <span class="copy-btn" onclick="copyText('Tirimisiyu Usman')">📋</span>
+          </p>
+        </div>
+      </div>
+      
+      <a href="https://wa.link/m2g76j" target="_blank" class="btn-support">I have made this transfer / Contact Support</a>
+
+      <p class="help">Need help? <a href="https://wa.link/m2g76j" target="_blank">Contact SCALE HEIGHT Support</a></p>
+    </div>
+  </div>
+
+  <!-- 🔥 Add this at the END so JS runs properly -->
+  <script src="script.js"></script>
+</body>
+</html>
