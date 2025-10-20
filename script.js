@@ -1,5 +1,5 @@
 // === CONFIGURATION ===
-const webAppUrl = "https://script.google.com/macros/s/AKfycbxi9ltCLWZuo7468Pq-MqU0cgmQ3OAN_8tPgEfSfP6lvkIluTArJ6omg2Pasc5kPc02Yw/exec";
+const webAppUrl = "https://script.google.com/macros/s/AKfycbxi4ixomXSmEGQFeix3vjJHNwkl-ZMMib5T77y0A9QtcLw2-5l1VPWZknrcFJX1tt90Zw/exec";
 const dashboardUrl = "https://sites.google.com/view/scaleheight/dashboard";
 
 // === ELEMENT REFERENCES ===
