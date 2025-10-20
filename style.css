@@ -9,7 +9,6 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f6f7fb;
   color: #333;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +18,6 @@ body {
 /* Container */
 .container {
   width: 100%;
-  max-width: 420px;
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
